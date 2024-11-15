@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국내숙소 - 저짝어뗘</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hotel-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px;
+        }
+        .hotel-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .hotel-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .hotel-details {
+            flex-grow: 1;
+        }
+        .hotel-details h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .hotel-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .hotel-price {
+            font-weight: bold;
+            color: #FF4752;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.php">
+                <img src="logo.png" alt="저짝어뗘 로고" />
+            </a>
+        </div>
+        <nav>
+            <a href="login.php">로그인</a>
+            <a href="signup.php">회원가입</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>국내 숙소</h2>
+            <div class="hotel-list">
+                <div class="hotel-item">
+                    <img src="hotel1.jpg" alt="호텔 1 사진">
+                    <div class="hotel-details">
+                        <h3>서울 쉐라톤 호텔</h3>
+                        <p>서울특별시 강남구</p>
+                        <div class="hotel-price">₩200,000/박</div>
+                    </div>
+                </div>
+                <div class="hotel-item">
+                    <img src="hotel2.jpg" alt="호텔 2 사진">
+                    <div class="hotel-details">
+                        <h3>부산 파라다이스 호텔</h3>
+                        <p>부산광역시 해운대구</p>
+                        <div class="hotel-price">₩250,000/박</div>
+                    </div>
+                </div>
+                <div class="hotel-item">
+                    <img src="hotel3.jpg" alt="호텔 3 사진">
+                    <div class="hotel-details">
+                        <h3>제주 신라 호텔</h3>
+                        <p>제주특별자치도 서귀포시</p>
+                        <div class="hotel-price">₩300,000/박</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 저짝어뗘. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>

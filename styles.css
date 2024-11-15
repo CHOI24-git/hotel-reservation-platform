@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    margin-right: 20px; /* 로고와 내비게이션 간 간격 추가 */
+}
+
+.logo img {
+    width: 20%; /* 원하는 크기로 조정, 예: 10% */
+    height: auto; /* 비율을 유지하기 위해 자동으로 설정 */
+}
+
+nav {
+    margin-left: auto; /* 내비게이션을 오른쪽으로 이동 */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    max-width: 1200px; /* 최대 너비 설정 (index.php용) */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 0 20px; /* 좌우 여백 추가 */
+}
+
+/* 로그인 및 회원가입 페이지 스타일 */
+.login-container,
+.signup-container {
+    max-width: 400px; /* 최대 너비 설정 (로그인/회원가입용) */
+    margin: 100px auto; /* 중앙 정렬 및 여백 추가 */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%; /* 너비를 100%로 설정 */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* 패딩과 경계선 포함 */
+}
+
+.guest-count {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 좌우 간격 분배 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.guest-count label {
+    margin-right: 5px; /* 레이블과 선택 박스 간격 */
+}
+
+
+.login-button,
+button[type="submit"] {
+    width: 100%; /* 버튼 너비 100% */
+    background-color: #FF4752; /* 버튼 색상 */
+    color: #fff;
+    padding: 15px; /* 패딩 조정 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* 위쪽 여백 추가 */
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.search {
+    position: relative;
+    color: white;
+}
+
+.search-background {
+    background-image: url('banner1.jpg'); /* 여기에 배경 이미지 URL 입력 */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search-background h2,
+.search-background input,
+.search-background select,
+.search-background button {
+    position: relative;
+    z-index: 2; /* 텍스트와 버튼이 배경 색상 위에 위치하도록 설정 */
+}
+
+.search-background h2 {
+    margin-bottom: 20px;
+}
+
+.search-background input[type="text"] {
+    width: 45%; /* 너비를 70%로 설정 */
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-background input[type="date"],
+.search-background select {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-button {
+    background-color: #fff;
+    color: #FF4752; /* 색상 변경 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.events {
+    padding: 20px;
+}
+
+.event {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 배너 슬라이더 스타일 */
+.banner-slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* 원하는 배너 높이 설정 */
+}
+
+.banner {
+    position: relative;
+    height: 100%; /* 배너 높이를 100%로 설정 */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%; /* 배너 높이를 채우도록 설정 */
+    object-fit: cover; /* 비율 유지 */
+}
+
+/* guest-count 스타일 추가 */
+.guest-count {
+    display: flex; /* Flexbox 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 중앙 정렬 */
+    gap: 5px; /* 요소 간의 간격 조정 */
+}
+
+.guest-count label {
+    margin-right: 0; /* 레이블과 선택 박스 간의 여백 제거 */
+}
+
+.date-guest-container {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-top: 10px; /* 여백 추가 */
+}
+
+.date-picker,
+.guest-count {
+    display: flex; /* Flexbox 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-right: 10px; /* 오른쪽 여백 추가 */
+}
+
+.date-picker input,
+.guest-count select {
+    margin-right: 5px; /* 입력 필드 간의 간격 */
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0; /* 여백 추가 */
+}
+
+.tabs {
+    background-color: #fff; /* 배경 색상 설정 */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 그림자 추가 */
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    color: #333; /* 기본 글씨 색상 */
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 0 10px; /* 버튼 간격 */
+}
+
+.tab-button:hover {
+    color: #FF4752; /* 마우스 오버 시 색상 변경 */
+}
+
+/* 회원가입 폼 스타일 */
+.signup-container form div {
+    margin-bottom: 1.5rem; /* 각 입력란 아래에 여백 추가 */
+}
+
+.signup-container label {
+    display: block;
+    margin-bottom: 0.5rem; /* 레이블과 입력란 사이의 간격 */
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="tel"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-container button {
+    margin-top: 1.5rem; /* 버튼과 마지막 입력란 사이의 간격 */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #FF4752; /* 버튼 색상 조정 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
